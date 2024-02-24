@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Codificador</title>
+</head>
+<body>
+    <section class="central">
+        <img src="images/Vector.png" alt="" id="img_logo">
+            <div class="conteudo">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Digite aqui"></textarea>
+            <div class="alerta_msg">
+                <img src="images/bi_exclamation-circle-fill.png" alt="" id="img_alerta">
+                <p id="alerta">Apenas letras minusculas e sem acento!</p>  
+            </div>
+            <div class="central_div1_btns">
+            <button id="cod" onclick="operacao()">CRIPTOGRAFAR</button>
+            <button id="desc" onclick="operacao()">DESCRIPTOGRAFAR</button>  
+            </div> 
+            </div>
+    </section>
+    <section class="central">
+        <div class="central_div2">
+            <div class="conteudo2">
+                <img src="images/imgPessoa.png" alt="" id="img_pessoa">
+                <input type="text" id="input">
+                <h3 id="result"></h3>
+                <p id="p">Digite o texto que você deseja <br> criptografar ou descriptografar</p>
+            </div>
+            <div class="conteudo3">
+              <button id="copiar">COPIAR</button>  
+            </div>
+        </div>
+    </section>
+
+    <script src="cod.js"></script>
+</body>
+</html>
